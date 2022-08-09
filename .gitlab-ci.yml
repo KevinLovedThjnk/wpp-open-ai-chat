@@ -1,0 +1,57 @@
+# This is an example of Gitlab CI configration
+# Any other CI platform and build steps can be used
+
+image: node:16.13.0-bullseye-slim
+
+stages:
+  - test
+  - build
+  - deploy
+
+test:
+  stage: test
+  before_script:
+    - mv .yarnrc.tmpl.yml .yarnrc.yml
+    - corepack enable
+  script:
+    - yarn install
+    - yarn lint
+    - yarn test
+  artifacts:
+    when: always
+    paths:
+      - test-results-path
+    expire_in: 2 weeks
+
+build:
+  stage: build
+  before_script:
+    - mv .yarnrc.tmpl.yml .yarnrc.yml
+    - corepack enable
+  script:
+    - yarn install
+    - yarn build
+  dependencies:
+    - test
+  artifacts:
+    paths:
+      - dist
+
+# You can use any type of deployment (nginx/static bucket). This one is an example of a deployment to a GCS bucket
+# As a prerequisite, The following environment variables have to be set for this deployment step:
+## GCP_SA_KEY - GCP Service Account Key https://cloud.google.com/iam/docs/creating-managing-service-account-keys#creating
+### with roles/storage.objectAdmin IAM role or similar
+## GCP_PROJECT - name of a project, where the GCS bucket is created
+## GCP_BUCKET - name of a bucket, where assets will be deployed. It should be already created: https://cloud.google.com/storage/docs/creating-buckets#create_a_new_bucket
+deploy:
+  image: google/cloud-sdk:slim
+  stage: deploy 
+  script:
+    - |
+      cat ${GCP_SA_KEY} | base64 -d > ./gcp-sa.json
+      gcloud auth activate-service-account --key-file ./gcp-sa.json
+      gcloud config set project ${GCP_PROJECT}
+      gsutil -m rsync -d -r -c dist/ gs://${GCP_BUCKET}/
+      gsutil setmeta -h "Cache-Control:no-store" "gs://${GCP_BUCKET}/**"
+  dependencies:
+    - build
