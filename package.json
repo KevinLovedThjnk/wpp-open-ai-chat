@@ -10,7 +10,7 @@
   },
   "engineStrict": true,
   "scripts": {
-    "start": "BROWSER=none PORT=8500 craco start",
+    "start": "BROWSER=none craco start",
     "build": "craco build"
   },
   "lint-staged": {
@@ -20,8 +20,8 @@
     "@craco/craco": "^7.0.0-alpha.7",
     "@platform-ui-kit/components-library": "^1.1.1",
     "@platform-ui-kit/components-library-react": "^1.1.1",
-    "@wpp-open/core": "^0.0.1",
-    "@wpp-open/react": "^0.0.1",
+    "@wpp-open/core": "^0.2.0",
+    "@wpp-open/react": "^0.2.0",
     "craco-plugin-single-spa-application": "^2.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -35,7 +35,17 @@
     "@types/react-dom": "^18.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "postcss-scss": "^4.0.4",
     "prettier": "^2.7.1",
+    "sass": "^1.54.5",
+    "stylelint": "^14.11.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^28.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-scss": "^4.3.0",
+    "stylelint-webpack-plugin": "^3.3.0",
     "ts-config-single-spa": "^3.0.0"
   }
 }

@@ -1,0 +1,77 @@
+.container {
+  background-color: var(--wpp-grey-color-100);
+  min-height: calc(100vh - var(--wpp-os-header-height));
+}
+
+.wppTopBar {
+  background-color: var(--wpp-grey-color-000);
+}
+
+.wppTopBarLogo {
+  display: flex;
+  align-content: center;
+}
+
+.wppTopBarTitle {
+  margin-left: 12px;
+  white-space: nowrap;
+}
+
+.innerContainer {
+  width: 1016px;
+  margin: 0 auto;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.introTitle {
+  margin-bottom: 8px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 28px;
+  margin-bottom: 28px;
+}
+
+.cardIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--wpp-primary-color-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cardTitle {
+  margin-bottom: 8px;
+}
+
+.cardDescription {
+  color: var(--wpp-grey-color-800);
+  margin-bottom: 25px;
+}
+
+.sectionUpload {
+  &::part(card) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.sectionUploadButton {
+  &::part(button) {
+    color: var(--wpp-text-color);
+    text-decoration: underline;
+    font-weight: 400;
+  }
+}
