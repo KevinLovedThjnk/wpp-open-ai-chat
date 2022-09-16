@@ -1,12 +1,12 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
+import ReactDOMClient from 'react-dom/client'
 import singleSpaReact from 'single-spa-react'
 
 import { Root } from 'app/Root'
 
 const lifecycles = singleSpaReact({
   React,
-  ReactDOM: ReactDOM as any,
+  ReactDOMClient,
   renderType: 'createRoot',
   rootComponent: Root,
   errorBoundary() {

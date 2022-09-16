@@ -8,7 +8,7 @@ import {
   WppIconEdit,
   WppIconTune,
 } from '@platform-ui-kit/components-library-react'
-/**import { useOs } from '@wpp-open/react'**/
+import { useOs } from '@wpp-open/react'
 import React from 'react'
 
 import styles from 'app/App.module.scss'
@@ -27,6 +27,9 @@ export function App() {
    */
   //Uncomment line to receive OS context
   /**const { baseUrl, osContext, osApi } = useOs()**/
+
+  const { osContext, osApi } = useOs()
+  const { firstname, lastname, country, agency, email, id } = osContext.userDetails
 
   const cardsData = [
     {
@@ -50,6 +53,14 @@ export function App() {
       linkUrl: '',
       icon: <WppIconTune color="var(--wpp-brand-color)" />,
     },
+  ]
+
+  const userData = [
+    { title: 'User name', value: [firstname, lastname].filter(Boolean).join(' ') || '-' },
+    { title: 'Email', value: email || '-' },
+    { title: 'Agency', value: agency || '-' },
+    { title: 'Country', value: country || '-' },
+    { title: 'ID', value: id || '-' },
   ]
 
   return (
@@ -100,6 +111,25 @@ export function App() {
         <WppCard className={styles.sectionUpload}>
           <WppActionButton className={styles.sectionUploadButton}>
             How to upload app to the Marketplace?
+          </WppActionButton>
+        </WppCard>
+        <WppCard className={styles.sectionUserDetails}>
+          <div className={styles.userDetails}>
+            {userData.map(({ title, value }) => {
+              return (
+                <div key={title} className={styles.userItem}>
+                  <WppTypography className={styles.userDetailsTitle} type="xs-body">
+                    {title}
+                  </WppTypography>
+                  <WppTypography className={styles.ellipsis} type="s-body">
+                    {value}
+                  </WppTypography>
+                </div>
+              )
+            })}
+          </div>
+          <WppActionButton onClick={() => navigator.clipboard.writeText(osApi.getAccessToken())}>
+            Copy auth token
           </WppActionButton>
         </WppCard>
       </div>
