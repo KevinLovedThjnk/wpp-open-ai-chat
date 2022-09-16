@@ -7,7 +7,6 @@ import { Root } from 'app/Root'
 const lifecycles = singleSpaReact({
   React,
   ReactDOMClient,
-  renderType: 'createRoot',
   rootComponent: Root,
   errorBoundary() {
     //Add your error boundary here
