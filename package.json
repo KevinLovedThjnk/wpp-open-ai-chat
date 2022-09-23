@@ -18,8 +18,8 @@
   },
   "dependencies": {
     "@craco/craco": "^7.0.0-alpha.7",
-    "@platform-ui-kit/components-library": "^1.2.1",
-    "@platform-ui-kit/components-library-react": "^1.2.1",
+    "@platform-ui-kit/components-library": "^1.4.0",
+    "@platform-ui-kit/components-library-react": "^1.4.0",
     "@wpp-open/core": "^0.2.1",
     "@wpp-open/react": "^0.2.1",
     "craco-plugin-single-spa-application": "^2.0.1",

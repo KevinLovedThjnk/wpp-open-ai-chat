@@ -2150,28 +2150,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@platform-ui-kit/components-library-react@npm:^1.2.1":
-  version: 1.3.1
-  resolution: "@platform-ui-kit/components-library-react@npm:1.3.1::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F34107826%2Fpackages%2Fnpm%2F%40platform-ui-kit%2Fcomponents-library-react%2F-%2F%40platform-ui-kit%2Fcomponents-library-react-1.3.1.tgz"
+"@platform-ui-kit/components-library-react@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@platform-ui-kit/components-library-react@npm:1.4.0::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F34107826%2Fpackages%2Fnpm%2F%40platform-ui-kit%2Fcomponents-library-react%2F-%2F%40platform-ui-kit%2Fcomponents-library-react-1.4.0.tgz"
   dependencies:
     tslib: 2.4.0
   peerDependencies:
-    "@platform-ui-kit/components-library": 1.3.1
+    "@platform-ui-kit/components-library": 1.4.0
     react: ^17.0.0 || ^18.0.0
     react-dom: ^17.0.0 || ^18.0.0
-  checksum: 6fcffbdd019c4b9deb8033abbceca6a5d79a9bfa972f930a836aa9c45c5974dafd60d2103020b84128fb2c01986bff7b18cc998dd59db521b8424b1ad962d21f
+  checksum: 1e00bb329eccb8c288ae3dee5127d70528f55e705c6452b689279b69bcfd9cf1fa80db50dcb8a29c701bb0b8b17399ea170b9c92a3bf16942f7b2f6683b97ad9
   languageName: node
   linkType: hard
 
-"@platform-ui-kit/components-library@npm:^1.2.1":
-  version: 1.3.1
-  resolution: "@platform-ui-kit/components-library@npm:1.3.1::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F34107826%2Fpackages%2Fnpm%2F%40platform-ui-kit%2Fcomponents-library%2F-%2F%40platform-ui-kit%2Fcomponents-library-1.3.1.tgz"
+"@platform-ui-kit/components-library@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@platform-ui-kit/components-library@npm:1.4.0::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F34107826%2Fpackages%2Fnpm%2F%40platform-ui-kit%2Fcomponents-library%2F-%2F%40platform-ui-kit%2Fcomponents-library-1.4.0.tgz"
   dependencies:
     "@stencil/core": 2.17.3
     air-datepicker: ^3.2.0
     lodash: 4.17.21
     tippy.js: 6.3.7
-  checksum: 3d92f5ebc62fffdc632196e5d00e1559e243703695e30a883b4c2aecb2730b8f56d0b2ac0f2ced4fc3a37c06809f3f5c794922bdfd829a66c12cd869582457f8
+  checksum: bbe1a64d7cd17d5c5514f2f493920ec9dcce8b22405dca72da3186060c67577571618c16420b08ebb570e23c673dcb1f52470e5e6d7536ea1ed326b2f8f576ed
   languageName: node
   linkType: hard
 
@@ -11967,8 +11967,8 @@ __metadata:
   resolution: "react-app-boilerplate@workspace:."
   dependencies:
     "@craco/craco": ^7.0.0-alpha.7
-    "@platform-ui-kit/components-library": ^1.2.1
-    "@platform-ui-kit/components-library-react": ^1.2.1
+    "@platform-ui-kit/components-library": ^1.4.0
+    "@platform-ui-kit/components-library-react": ^1.4.0
     "@types/node": ^16.7.13
     "@types/react": ^18.0.0
     "@types/react-dom": ^18.0.0
