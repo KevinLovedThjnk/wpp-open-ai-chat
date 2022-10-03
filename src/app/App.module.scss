@@ -61,20 +61,8 @@
   margin-bottom: 25px;
 }
 
-.sectionUpload {
-  margin-bottom: 28px;
-  &::part(card) {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-.sectionUploadButton {
-  &::part(button) {
-    color: var(--wpp-text-color);
-    text-decoration: underline;
-    font-weight: 400;
-  }
+.cardLink {
+  text-decoration: none;
 }
 
 .sectionUserDetails {

@@ -25,9 +25,8 @@ export function App() {
    * - methods to fire actions on the parent OS level
    * Read more about it in the README file
    */
-  //Uncomment line to receive OS context
-  /**const { baseUrl, osContext, osApi } = useOs()**/
 
+  //Hook to receive OS context
   const { osContext, osApi } = useOs()
   const { firstname, lastname, country, agency, email, id } = osContext.userDetails
 
@@ -36,21 +35,22 @@ export function App() {
       title: 'Build Your App',
       description: 'Use micro-frontend approach to create your app',
       linkTitle: 'Documentation',
-      linkUrl: '',
+      linkUrl: 'https://developers.os.wpp.com/docs/developer-guide/quickstart/start-with-react',
       icon: <WppIconCodeView color="var(--wpp-brand-color)" />,
     },
     {
       title: 'Design Guidelines',
       description: 'Follow the instructions to create your app layout',
       linkTitle: 'View Guidelines',
-      linkUrl: '',
+      linkUrl:
+        'https://www.figma.com/files/1061399072087037182/project/46755857/WPP-Open-DS-(Default)?fuid=1130807981667476756',
       icon: <WppIconEdit color="var(--wpp-brand-color)" />,
     },
     {
       title: 'UI Components',
       description: 'Use ready-made design components in the app',
       linkTitle: 'View Components',
-      linkUrl: '',
+      linkUrl: 'https://components.os.wpp.com/?path=/story/guidelines-welcome--page',
       icon: <WppIconTune color="var(--wpp-brand-color)" />,
     },
   ]
@@ -100,19 +100,16 @@ export function App() {
                 <WppTypography className={styles.cardDescription} type="s-body" tag="span">
                   {card.description}
                 </WppTypography>
-                <WppActionButton>
-                  {card.linkTitle}
-                  <WppIconArrow slot="icon-end" />
-                </WppActionButton>
+                <a className={styles.cardLink} href={card.linkUrl} target="_blank" rel="noreferrer">
+                  <WppActionButton>
+                    {card.linkTitle}
+                    <WppIconArrow slot="icon-end" />
+                  </WppActionButton>
+                </a>
               </WppCard>
             )
           })}
         </div>
-        <WppCard className={styles.sectionUpload}>
-          <WppActionButton className={styles.sectionUploadButton}>
-            How to upload app to the Marketplace?
-          </WppActionButton>
-        </WppCard>
         <WppCard className={styles.sectionUserDetails}>
           <div className={styles.userDetails}>
             {userData.map(({ title, value }) => {

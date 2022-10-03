@@ -3239,22 +3239,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wpp-open/core@npm:^0.2.1":
-  version: 0.2.1
-  resolution: "@wpp-open/core@npm:0.2.1::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F32142954%2Fpackages%2Fnpm%2F%40wpp-open%2Fcore%2F-%2F%40wpp-open%2Fcore-0.2.1.tgz"
+"@wpp-open/core@npm:^0.2.2":
+  version: 0.2.2
+  resolution: "@wpp-open/core@npm:0.2.2::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F32142954%2Fpackages%2Fnpm%2F%40wpp-open%2Fcore%2F-%2F%40wpp-open%2Fcore-0.2.2.tgz"
   peerDependencies:
-    "@platform-ui-kit/components-library": ^1.3.1
-  checksum: e5c65a869b46ed3228408b45fd7e4634cb760a29f6d40e57fa200cd7c9cd7ca205e9abba640df193c67713eb90134e6afe6eabf4cf968f81de0661d7146a9295
+    "@platform-ui-kit/components-library": ^1.4.0
+  checksum: 12d9fca385449138e9476d3493c925511bd7fe145d6f8f5b7c69a55e044433770d9783730cb8eedf8986f194eabc9c5ab01399fbf04e250f4109f6481f9ead81
   languageName: node
   linkType: hard
 
-"@wpp-open/react@npm:^0.2.1":
-  version: 0.2.1
-  resolution: "@wpp-open/react@npm:0.2.1::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F32142954%2Fpackages%2Fnpm%2F%40wpp-open%2Freact%2F-%2F%40wpp-open%2Freact-0.2.1.tgz"
+"@wpp-open/react@npm:^0.2.2":
+  version: 0.2.2
+  resolution: "@wpp-open/react@npm:0.2.2::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F32142954%2Fpackages%2Fnpm%2F%40wpp-open%2Freact%2F-%2F%40wpp-open%2Freact-0.2.2.tgz"
   peerDependencies:
-    "@wpp-open/core": ^0.2.1
+    "@wpp-open/core": ^0.2.2
     react: ^17.0.0 || ^18.0.0
-  checksum: 4a3fd9e397a4175d375721fadda8587ae90ea507e54b9f8f2b6fe34990ffd432664197ea0a444e28166e210da0b6a46eeb8e620648a4720509f2c07b7b5749e4
+  checksum: 8b3a51be4420d5ab8cd5b0f89c9ba76cbc3bdfb7a5c97044e4dc7994e71182d391f758b4c8cc9ca17e987f9ecde3a29377846f0c6c071733495b8b72f36f73fd
   languageName: node
   linkType: hard
 
@@ -11972,8 +11972,8 @@ __metadata:
     "@types/node": ^16.7.13
     "@types/react": ^18.0.0
     "@types/react-dom": ^18.0.0
-    "@wpp-open/core": ^0.2.1
-    "@wpp-open/react": ^0.2.1
+    "@wpp-open/core": ^0.2.2
+    "@wpp-open/react": ^0.2.2
     craco-plugin-single-spa-application: ^2.0.1
     eslint-config-prettier: ^8.5.0
     eslint-plugin-prettier: ^4.2.1
