@@ -5,7 +5,6 @@ import {
   WppActionButton,
   WppIconArrow,
   WppIconCodeView,
-  WppIconEdit,
   WppIconTune,
 } from '@platform-ui-kit/components-library-react'
 import { useOs } from '@wpp-open/react'
@@ -37,14 +36,6 @@ export function App() {
       linkTitle: 'Documentation',
       linkUrl: 'https://developers.os.wpp.com/docs/developer-guide/quickstart/start-with-react',
       icon: <WppIconCodeView color="var(--wpp-brand-color)" />,
-    },
-    {
-      title: 'Design Guidelines',
-      description: 'Follow the instructions to create your app layout',
-      linkTitle: 'View Guidelines',
-      linkUrl:
-        'https://www.figma.com/files/1061399072087037182/project/46755857/WPP-Open-DS-(Default)?fuid=1130807981667476756',
-      icon: <WppIconEdit color="var(--wpp-brand-color)" />,
     },
     {
       title: 'UI Components',

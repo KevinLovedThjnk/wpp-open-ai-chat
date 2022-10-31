@@ -36,7 +36,7 @@
 
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 28px;
   margin-bottom: 28px;
 }
@@ -53,10 +53,12 @@
 }
 
 .cardTitle {
+  display: block;
   margin-bottom: 8px;
 }
 
 .cardDescription {
+  display: block;
   color: var(--wpp-grey-color-800);
   margin-bottom: 25px;
 }

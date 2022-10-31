@@ -16,4 +16,4 @@ See more info [here](https://components.os.wpp.com/)
 2. To help use the context from Core OS app, it is recommended to use helper packages:
    1. `@wpp-open/core` - typings,   
       `@wpp-open/react` - React helpers for working with Core OS context, permissions etc.
-3. You can read more about the OS context and micro app setup [here](https://developers-ch-stable.os-dev.io/docs/archive/reference/wpp-open-os-app-config/index.html)
+3. You can read more about the OS context and micro app setup [here](https://developers.os.wpp.com/docs/developer-guide/reference/microapp-props-react)
