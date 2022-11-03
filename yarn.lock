@@ -2150,28 +2150,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@platform-ui-kit/components-library-react@npm:^1.4.0":
-  version: 1.4.0
-  resolution: "@platform-ui-kit/components-library-react@npm:1.4.0::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F34107826%2Fpackages%2Fnpm%2F%40platform-ui-kit%2Fcomponents-library-react%2F-%2F%40platform-ui-kit%2Fcomponents-library-react-1.4.0.tgz"
+"@platform-ui-kit/components-library-react@npm:^1.4.2":
+  version: 1.4.2
+  resolution: "@platform-ui-kit/components-library-react@npm:1.4.2::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F34107826%2Fpackages%2Fnpm%2F%40platform-ui-kit%2Fcomponents-library-react%2F-%2F%40platform-ui-kit%2Fcomponents-library-react-1.4.2.tgz"
   dependencies:
     tslib: 2.4.0
   peerDependencies:
-    "@platform-ui-kit/components-library": 1.4.0
+    "@platform-ui-kit/components-library": 1.4.2
     react: ^17.0.0 || ^18.0.0
     react-dom: ^17.0.0 || ^18.0.0
-  checksum: 1e00bb329eccb8c288ae3dee5127d70528f55e705c6452b689279b69bcfd9cf1fa80db50dcb8a29c701bb0b8b17399ea170b9c92a3bf16942f7b2f6683b97ad9
+  checksum: 7a3d67bbabc51389b82c6589229cb95f9a1b2071abdbd5371f49dfa40af047c98eb802f5da56845b20f96a8b5b4f52354cb84f469f34225f31dda3db1dd602c5
   languageName: node
   linkType: hard
 
-"@platform-ui-kit/components-library@npm:^1.4.0":
-  version: 1.4.0
-  resolution: "@platform-ui-kit/components-library@npm:1.4.0::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F34107826%2Fpackages%2Fnpm%2F%40platform-ui-kit%2Fcomponents-library%2F-%2F%40platform-ui-kit%2Fcomponents-library-1.4.0.tgz"
+"@platform-ui-kit/components-library@npm:^1.4.2":
+  version: 1.4.2
+  resolution: "@platform-ui-kit/components-library@npm:1.4.2::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F34107826%2Fpackages%2Fnpm%2F%40platform-ui-kit%2Fcomponents-library%2F-%2F%40platform-ui-kit%2Fcomponents-library-1.4.2.tgz"
   dependencies:
     "@stencil/core": 2.17.3
     air-datepicker: ^3.2.0
     lodash: 4.17.21
     tippy.js: 6.3.7
-  checksum: bbe1a64d7cd17d5c5514f2f493920ec9dcce8b22405dca72da3186060c67577571618c16420b08ebb570e23c673dcb1f52470e5e6d7536ea1ed326b2f8f576ed
+  checksum: 4c92b8610cbd03b220c01cbc176ca977c0e134508951903b156c48b98d333740b67afc9c51e20bec4c35797e6659dcc2aed324fc90d16bb4dd5f8f49b8534e8a
   languageName: node
   linkType: hard
 
@@ -2218,6 +2218,13 @@ __metadata:
   version: 2.11.5
   resolution: "@popperjs/core@npm:2.11.5"
   checksum: fd7f9dca3fb716d7426332b6ee283f88d2724c0ab342fb678865a640bad403dfb9eeebd8204a406986162f7e2b33394f104320008b74d0e9066d7322f70ea35d
+  languageName: node
+  linkType: hard
+
+"@remix-run/router@npm:1.0.2":
+  version: 1.0.2
+  resolution: "@remix-run/router@npm:1.0.2"
+  checksum: bf410f9cbb31308fc306bc8c5e3a732b9ad81ddb84281e37804bdd196b6db7ddd86abc29e15c5b21883e01b37f250d0b8db7bee5f5a9af6c7c532b68280676c9
   languageName: node
   linkType: hard
 
@@ -3239,22 +3246,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wpp-open/core@npm:^0.2.2":
-  version: 0.2.2
-  resolution: "@wpp-open/core@npm:0.2.2::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F32142954%2Fpackages%2Fnpm%2F%40wpp-open%2Fcore%2F-%2F%40wpp-open%2Fcore-0.2.2.tgz"
+"@wpp-open/core@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "@wpp-open/core@npm:0.3.0::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F32142954%2Fpackages%2Fnpm%2F%40wpp-open%2Fcore%2F-%2F%40wpp-open%2Fcore-0.3.0.tgz"
   peerDependencies:
-    "@platform-ui-kit/components-library": ^1.4.0
-  checksum: 12d9fca385449138e9476d3493c925511bd7fe145d6f8f5b7c69a55e044433770d9783730cb8eedf8986f194eabc9c5ab01399fbf04e250f4109f6481f9ead81
+    "@platform-ui-kit/components-library": ^1.4.2
+  checksum: a3fdb853786a1cef3080fd96f981ec98864b138a0a72867d229cd06e6a79208b1debd4f10c89cfb18a61461e6d801e9da639843e8844819d3db75f17fc93f5a1
   languageName: node
   linkType: hard
 
-"@wpp-open/react@npm:^0.2.2":
-  version: 0.2.2
-  resolution: "@wpp-open/react@npm:0.2.2::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F32142954%2Fpackages%2Fnpm%2F%40wpp-open%2Freact%2F-%2F%40wpp-open%2Freact-0.2.2.tgz"
+"@wpp-open/react@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "@wpp-open/react@npm:0.3.0::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F32142954%2Fpackages%2Fnpm%2F%40wpp-open%2Freact%2F-%2F%40wpp-open%2Freact-0.3.0.tgz"
   peerDependencies:
-    "@wpp-open/core": ^0.2.2
+    "@wpp-open/core": ^0.3.0
     react: ^17.0.0 || ^18.0.0
-  checksum: 8b3a51be4420d5ab8cd5b0f89c9ba76cbc3bdfb7a5c97044e4dc7994e71182d391f758b4c8cc9ca17e987f9ecde3a29377846f0c6c071733495b8b72f36f73fd
+  checksum: e393c24753a249899c924ab19afa2491262acfc7a9623dd637f9d65439bca07961d8ee4fa6fe7be4728a107464cbd42c2f94759e578cabbed22d97fb98497705
   languageName: node
   linkType: hard
 
@@ -11967,13 +11974,13 @@ __metadata:
   resolution: "react-app-boilerplate@workspace:."
   dependencies:
     "@craco/craco": ^7.0.0-alpha.7
-    "@platform-ui-kit/components-library": ^1.4.0
-    "@platform-ui-kit/components-library-react": ^1.4.0
+    "@platform-ui-kit/components-library": ^1.4.2
+    "@platform-ui-kit/components-library-react": ^1.4.2
     "@types/node": ^16.7.13
     "@types/react": ^18.0.0
     "@types/react-dom": ^18.0.0
-    "@wpp-open/core": ^0.2.2
-    "@wpp-open/react": ^0.2.2
+    "@wpp-open/core": ^0.3.0
+    "@wpp-open/react": ^0.3.0
     craco-plugin-single-spa-application: ^2.0.1
     eslint-config-prettier: ^8.5.0
     eslint-plugin-prettier: ^4.2.1
@@ -11981,6 +11988,7 @@ __metadata:
     prettier: ^2.7.1
     react: ^18.2.0
     react-dom: ^18.2.0
+    react-router-dom: ^6.4.2
     react-scripts: 5.0.1
     sass: ^1.54.5
     single-spa-react: ^5.0.0
@@ -12087,6 +12095,30 @@ __metadata:
   version: 0.11.0
   resolution: "react-refresh@npm:0.11.0"
   checksum: 112178a05b1e0ffeaf5d9fb4e56b4410a34a73adeb04dbf13abdc50d9ac9df2ada83e81485156cca0b3fa296aa3612751b3d6cd13be4464642a43679b819cbc7
+  languageName: node
+  linkType: hard
+
+"react-router-dom@npm:^6.4.2":
+  version: 6.4.2
+  resolution: "react-router-dom@npm:6.4.2"
+  dependencies:
+    "@remix-run/router": 1.0.2
+    react-router: 6.4.2
+  peerDependencies:
+    react: ">=16.8"
+    react-dom: ">=16.8"
+  checksum: 858e6a5c4c5da56615dbf53118d576d61851157f077805dfe476b10c332329f8b1494062d75a8de6f1bdd35fbcb8a510f8e23beb2306440d2452b9f2fe4b079d
+  languageName: node
+  linkType: hard
+
+"react-router@npm:6.4.2":
+  version: 6.4.2
+  resolution: "react-router@npm:6.4.2"
+  dependencies:
+    "@remix-run/router": 1.0.2
+  peerDependencies:
+    react: ">=16.8"
+  checksum: c229d65d9b0df88dd4e8c57bd59793e371f2c84b4cb200b77ead9f601c8fd7758f72acfffc9a2fc5cb31877af3a0e08ae24aeb75ab2b20681f3b1d33ca671552
   languageName: node
   linkType: hard
 
