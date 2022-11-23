@@ -1506,7 +1506,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@craco/craco@npm:^7.0.0-alpha.8":
+"@craco/craco@npm:^7.0.0":
   version: 7.0.0
   resolution: "@craco/craco@npm:7.0.0"
   dependencies:
@@ -2179,28 +2179,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@platform-ui-kit/components-library-react@npm:^1.5.0":
-  version: 1.5.0
-  resolution: "@platform-ui-kit/components-library-react@npm:1.5.0::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F34107826%2Fpackages%2Fnpm%2F%40platform-ui-kit%2Fcomponents-library-react%2F-%2F%40platform-ui-kit%2Fcomponents-library-react-1.5.0.tgz"
+"@platform-ui-kit/components-library-react@npm:^1.6.0":
+  version: 1.6.0
+  resolution: "@platform-ui-kit/components-library-react@npm:1.6.0::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F34107826%2Fpackages%2Fnpm%2F%40platform-ui-kit%2Fcomponents-library-react%2F-%2F%40platform-ui-kit%2Fcomponents-library-react-1.6.0.tgz"
   dependencies:
     tslib: 2.4.0
   peerDependencies:
-    "@platform-ui-kit/components-library": 1.5.0
+    "@platform-ui-kit/components-library": 1.6.0
     react: ^17.0.0 || ^18.0.0
     react-dom: ^17.0.0 || ^18.0.0
-  checksum: 2f717ef65af5a508b594b36ee250d6f084226e7e724053bb630170caa2748e63e0fbd13bc6296d4d8d3e0c319e96e05e2856184e0a42bb2f5a4cfe5b07f890c7
+  checksum: 89755cff32ef7f53f1ad4b46e3dbf2b5273df8b13051dbb6c831cca8b7c58eeb53478a71ad16a8d7b7a4aebe70abdcb7367e785c6bc4bd1afc1cdefa3ceb1246
   languageName: node
   linkType: hard
 
-"@platform-ui-kit/components-library@npm:^1.5.0":
-  version: 1.5.0
-  resolution: "@platform-ui-kit/components-library@npm:1.5.0::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F34107826%2Fpackages%2Fnpm%2F%40platform-ui-kit%2Fcomponents-library%2F-%2F%40platform-ui-kit%2Fcomponents-library-1.5.0.tgz"
+"@platform-ui-kit/components-library@npm:^1.6.0":
+  version: 1.6.0
+  resolution: "@platform-ui-kit/components-library@npm:1.6.0::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F34107826%2Fpackages%2Fnpm%2F%40platform-ui-kit%2Fcomponents-library%2F-%2F%40platform-ui-kit%2Fcomponents-library-1.6.0.tgz"
   dependencies:
     "@stencil/core": "git+https://git@gitlab.com/wpp-ch-gitlab/stencil.git#a26a3ef916c498680dcc376211207dfa2f2caed7"
     air-datepicker: ^3.2.0
     lodash: 4.17.21
     tippy.js: 6.3.7
-  checksum: c71e7db718be49c4c8272133c16d2980f351736585df19b5543c4c91f3f62c01b494bbbb0537064446338fdc884c076d812f838079fb4d5298163710323dc84a
+  checksum: e471107e04ae6fec1144553c33b6775d2b469686c4cdd1d975eafb40d80ae2367d0b1f6145a5f784a6fc1d3d0d7b5067cee6639ccafc39830ba4e03a0002492e
   languageName: node
   linkType: hard
 
@@ -2842,12 +2842,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^18.0.8":
-  version: 18.0.8
-  resolution: "@types/react-dom@npm:18.0.8"
+"@types/react-dom@npm:^18.0.9":
+  version: 18.0.9
+  resolution: "@types/react-dom@npm:18.0.9"
   dependencies:
     "@types/react": "*"
-  checksum: 522e5e949d05f35c6037a2290838c9c7ff92a9d06f7d96b993c7c3f5a86d8f3a6337e059c94e6fb0920227f445e5d1ce10fbfe3d9bbd95fb82a5539249d90646
+  checksum: e744e3feba25fc43733289d4df4d9c0e59fcca7f34e8c89d75f81a339accb2bd70236d69382d47d2c0ad06a1529b2e56aa6171fe175854d60e07156ddceedfcb
   languageName: node
   linkType: hard
 
@@ -4989,6 +4989,19 @@ __metadata:
     path-type: ^4.0.0
     yaml: ^1.10.0
   checksum: 4be63e7117955fd88333d7460e4c466a90f556df6ef34efd59034d2463484e339666c41f02b523d574a797ec61f4a91918c5b89a316db2ea2f834e0d2d09465b
+  languageName: node
+  linkType: hard
+
+"cosmiconfig@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "cosmiconfig@npm:7.1.0"
+  dependencies:
+    "@types/parse-json": ^4.0.0
+    import-fresh: ^3.2.1
+    parse-json: ^5.0.0
+    path-type: ^4.0.0
+    yaml: ^1.10.0
+  checksum: c53bf7befc1591b2651a22414a5e786cd5f2eeaa87f3678a3d49d6069835a9d8d1aef223728e98aa8fec9a95bf831120d245096db12abe019fecb51f5696c96f
   languageName: node
   linkType: hard
 
@@ -11734,6 +11747,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss@npm:^8.4.19":
+  version: 8.4.19
+  resolution: "postcss@npm:8.4.19"
+  dependencies:
+    nanoid: ^3.3.4
+    picocolors: ^1.0.0
+    source-map-js: ^1.0.2
+  checksum: 62782723a385f92b7525f66d29614624de7c5643855423db3a5efd9287e677650300192749adddbbb6734cea9b1d5f5fd4f6ea00ca3f9a95dbbb88f835f5ca64
+  languageName: node
+  linkType: hard
+
 "prelude-ls@npm:^1.2.1":
   version: 1.2.1
   resolution: "prelude-ls@npm:1.2.1"
@@ -11976,12 +12000,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "react-app-boilerplate@workspace:."
   dependencies:
-    "@craco/craco": ^7.0.0-alpha.8
-    "@platform-ui-kit/components-library": ^1.5.0
-    "@platform-ui-kit/components-library-react": ^1.5.0
+    "@craco/craco": ^7.0.0
+    "@platform-ui-kit/components-library": ^1.6.0
+    "@platform-ui-kit/components-library-react": ^1.6.0
     "@types/node": ^18.11.9
     "@types/react": ^18.0.25
-    "@types/react-dom": ^18.0.8
+    "@types/react-dom": ^18.0.9
     "@wpp-open/core": ^0.3.1
     "@wpp-open/react": ^0.3.1
     craco-plugin-single-spa-application: ^2.0.1
@@ -11993,10 +12017,10 @@ __metadata:
     react-dom: ^18.2.0
     react-router-dom: ^6.4.3
     react-scripts: 5.0.1
-    sass: ^1.56.0
+    sass: ^1.56.1
     single-spa-react: ^5.0.0
-    stylelint: ^14.14.1
-    stylelint-config-prettier: ^9.0.3
+    stylelint: ^14.15.0
+    stylelint-config-prettier: ^9.0.4
     stylelint-config-rational-order: ^0.1.2
     stylelint-config-standard: ^29.0.0
     stylelint-order: ^5.0.0
@@ -12004,7 +12028,7 @@ __metadata:
     stylelint-scss: ^4.3.0
     stylelint-webpack-plugin: ^3.3.0
     ts-config-single-spa: ^3.0.0
-    typescript: ^4.8.4
+    typescript: ^4.9.3
   languageName: unknown
   linkType: soft
 
@@ -12812,16 +12836,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.56.0":
-  version: 1.56.0
-  resolution: "sass@npm:1.56.0"
+"sass@npm:^1.56.1":
+  version: 1.56.1
+  resolution: "sass@npm:1.56.1"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
     immutable: ^4.0.0
     source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: 37fb48b838f7a12f3c3efbf27bfc5f2b7fba015ed4b11effe32bd9488e30e1d5cefcbfef1e5c5dbd95557889fe2c7ec72f33e898cfc76182ea34eae03b1a4fb1
+  checksum: 78e693e5992b149574c95d5adfe39ca3e5b97d80befa11191a20d1daa41fe201a98ac099beab726cd3095e2d2e7991a2c408ba0fcc3fa9f525879de7eee18dad
   languageName: node
   linkType: hard
 
@@ -13709,15 +13733,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-config-prettier@npm:^9.0.3":
-  version: 9.0.3
-  resolution: "stylelint-config-prettier@npm:9.0.3"
+"stylelint-config-prettier@npm:^9.0.4":
+  version: 9.0.4
+  resolution: "stylelint-config-prettier@npm:9.0.4"
   peerDependencies:
     stylelint: ">=11.0.0"
   bin:
     stylelint-config-prettier: bin/check.js
     stylelint-config-prettier-check: bin/check.js
-  checksum: 9ff3f719daf3865878615ba52c31de6ef0a0d25d41cb58c41afe2f1c459a838997ff912cc4a5b4d401f92e2193667ff4d140b6d303cf8192e894b5cb454c41b9
+  checksum: cf94f646f6b1756a9e41940524a8c276ec05be9a2a02907fee6cb4ebdc39e3a9049c96ec97e79cc3f3c0487f5870c81b3d68b0a65d1ee81cd9d7700420788cee
   languageName: node
   linkType: hard
 
@@ -13819,14 +13843,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint@npm:^14.14.1":
-  version: 14.14.1
-  resolution: "stylelint@npm:14.14.1"
+"stylelint@npm:^14.15.0":
+  version: 14.15.0
+  resolution: "stylelint@npm:14.15.0"
   dependencies:
     "@csstools/selector-specificity": ^2.0.2
     balanced-match: ^2.0.0
     colord: ^2.9.3
-    cosmiconfig: ^7.0.1
+    cosmiconfig: ^7.1.0
     css-functions-list: ^3.1.0
     debug: ^4.3.4
     fast-glob: ^3.2.12
@@ -13846,7 +13870,7 @@ __metadata:
     micromatch: ^4.0.5
     normalize-path: ^3.0.0
     picocolors: ^1.0.0
-    postcss: ^8.4.18
+    postcss: ^8.4.19
     postcss-media-query-parser: ^0.2.3
     postcss-resolve-nested-selector: ^0.1.1
     postcss-safe-parser: ^6.0.0
@@ -13863,7 +13887,7 @@ __metadata:
     write-file-atomic: ^4.0.2
   bin:
     stylelint: bin/stylelint.js
-  checksum: be35a419e181ccf31410091d3a92766ffd17c71e8b6dda481343e2c589cbde96be539472783477f7f2907802bd9d79cc8322c3d22fb62c0fbd42fefd4ba66435
+  checksum: a3b4593a35a2303987305ca5147ea31e92a47e1994d393be8d1a07a6dc8720b9eee1fed62aafaca618cd8f06e0b3ca601af4fa6618967f1f359ea36ade4c2550
   languageName: node
   linkType: hard
 
@@ -14550,23 +14574,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.8.4":
-  version: 4.8.4
-  resolution: "typescript@npm:4.8.4"
+"typescript@npm:^4.9.3":
+  version: 4.9.3
+  resolution: "typescript@npm:4.9.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 3e4f061658e0c8f36c820802fa809e0fd812b85687a9a2f5430bc3d0368e37d1c9605c3ce9b39df9a05af2ece67b1d844f9f6ea8ff42819f13bcb80f85629af0
+  checksum: 17b8f816050b412403e38d48eef0e893deb6be522d6dc7caf105e54a72e34daf6835c447735fd2b28b66784e72bfbf87f627abb4818a8e43d1fa8106396128dc
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.8.4#~builtin<compat/typescript>":
-  version: 4.8.4
-  resolution: "typescript@patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=f456af"
+"typescript@patch:typescript@^4.9.3#~builtin<compat/typescript>":
+  version: 4.9.3
+  resolution: "typescript@patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=f456af"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 563a0ef47abae6df27a9a3ab38f75fc681f633ccf1a3502b1108e252e187787893de689220f4544aaf95a371a4eb3141e4a337deb9895de5ac3c1ca76430e5f0
+  checksum: ef65c22622d864497d0a0c5db693523329b3284c15fe632e93ad9aa059e8dc38ef3bd767d6f26b1e5ecf9446f49bd0f6c4e5714a2eeaf352805dc002479843d1
   languageName: node
   linkType: hard
 
