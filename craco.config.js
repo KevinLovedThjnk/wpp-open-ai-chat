@@ -12,7 +12,7 @@ const singleSpaAppPlugin = {
     entry: 'src/index.tsx',
     orgPackagesAsExternal: false,
     reactPackagesAsExternal: false,
-    minimize: whenDev(() => true, false),
+    minimize: whenDev(() => false, true),
     outputFilename: 'main.js',
   },
 }
