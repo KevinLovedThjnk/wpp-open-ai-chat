@@ -2,12 +2,7 @@ yarnPath: .yarn/releases/yarn-3.2.2.cjs
 nodeLinker: node-modules
 
 npmScopes:
-  wpp-open:
-    npmRegistryServer: "https://gitlab.com/api/v4/projects/32142954/packages/npm/"
+  wppopen:
+    npmRegistryServer: 'https://npm.pkg.github.com'
     npmAlwaysAuth: true
-    npmAuthToken: ${OSMIUM_ACCESS_TOKEN}
-
-  platform-ui-kit:
-    npmRegistryServer: "https://gitlab.com/api/v4/projects/34107826/packages/npm/"
-    npmAlwaysAuth: true
-    npmAuthToken: ${OSMIUM_ACCESS_TOKEN}
+    npmAuthToken: ${WPP_OPEN_GITHUB_TOKEN}

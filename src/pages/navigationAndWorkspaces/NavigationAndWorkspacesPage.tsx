@@ -1,5 +1,4 @@
-import { useOs } from '@wpp-open/react'
-import React from 'react'
+import { useOs } from '@wppopen/react'
 import { useLocation } from 'react-router-dom'
 
 import { Section } from 'pages/navigationAndWorkspaces/Section/Section'

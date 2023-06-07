@@ -1,4 +1,4 @@
-import { useOs } from '@wpp-open/react'
+import { useOs } from '@wppopen/react'
 import React from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 

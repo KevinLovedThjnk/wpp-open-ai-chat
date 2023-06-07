@@ -5,9 +5,8 @@ import {
   WppIconCodeView,
   WppIconTune,
   WppTypography,
-} from '@platform-ui-kit/components-library-react'
-import { useOs } from '@wpp-open/react'
-import React from 'react'
+} from '@wppopen/components-library-react'
+import { useOs } from '@wppopen/react'
 
 import styles from 'pages/welcome/WelcomePage.module.scss'
 

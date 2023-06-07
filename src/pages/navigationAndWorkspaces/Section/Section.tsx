@@ -1,4 +1,4 @@
-import { WppCard, WppTypography } from '@platform-ui-kit/components-library-react'
+import { WppCard, WppTypography } from '@wppopen/components-library-react'
 import React from 'react'
 
 import styles from 'pages/navigationAndWorkspaces/Section/Section.module.scss'

@@ -1,6 +1,6 @@
-import { NavigationState } from '@platform-ui-kit/components-library'
-import { WppTopbar, WppTypography } from '@platform-ui-kit/components-library-react'
-import { useOs } from '@wpp-open/react'
+import { NavigationState } from '@wppopen/components-library'
+import { WppTopbar, WppTypography } from '@wppopen/components-library-react'
+import { useOs } from '@wppopen/react'
 import React from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 
