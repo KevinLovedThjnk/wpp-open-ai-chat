@@ -1,3 +1,4 @@
+import { HierarchyCustomNodeType } from '@wppopen/core'
 import { useOs } from '@wppopen/react'
 import { useLocation } from 'react-router-dom'
 
@@ -13,9 +14,17 @@ export const NavigationAndWorkspacesPage = () => {
     { title: 'Microapp route', value: location.pathname },
   ]
 
+  const workspaceTypeLabel =
+    selectedWorkspace?.type === HierarchyCustomNodeType
+      ? `Custom (${selectedWorkspace?.customTypeName})`
+      : selectedWorkspace?.type
+
   const workspaceData = [
     { title: 'Selected workspace', value: selectedWorkspace?.name || 'None' },
-    { title: 'Type', value: selectedWorkspace?.type || '-' },
+    {
+      title: 'Type',
+      value: workspaceTypeLabel || '-',
+    },
     { title: 'Workspace azId', value: selectedWorkspace?.azId || '-' },
   ]
 

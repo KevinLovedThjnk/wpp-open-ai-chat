@@ -27,7 +27,7 @@ export function App() {
           <Routes>
             <Route path="/welcome" element={<WelcomePage />} />
             <Route path="/navigation-workspaces" element={<NavigationAndWorkspacesPage />} />
-            <Route index element={<Navigate to="/welcome" />} />
+            <Route index element={<Navigate replace to="/welcome" />} />
           </Routes>
         </div>
       </div>

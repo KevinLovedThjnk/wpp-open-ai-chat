@@ -58,11 +58,14 @@
 .userDetails {
   display: flex;
   justify-content: space-between;
+  gap: 16px;
   width: 100%;
   margin-bottom: 8px;
 }
 
 .userItem {
+  flex: 0 1 auto;
+  min-width: 0;
   display: flex;
   flex-direction: column;
 }
