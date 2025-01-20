@@ -7,7 +7,7 @@ export interface Props {
   title: string
   data: {
     title: string
-    value: string
+    value: string | null
   }[]
 }
 

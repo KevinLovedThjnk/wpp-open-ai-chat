@@ -20,7 +20,7 @@ export function App() {
   const { osContext } = useOs()
 
   return (
-    <BrowserRouter basename={osContext.baseUrl}>
+    <BrowserRouter basename={osContext.baseUrl || undefined}>
       <div className={styles.container}>
         <Header />
         <div className={styles.pageContent}>
