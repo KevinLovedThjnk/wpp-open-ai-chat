@@ -1,17 +1,14 @@
-import React from 'react'
-import ReactDOMClient from 'react-dom/client'
-import singleSpaReact from 'single-spa-react'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
 
-import { Root } from 'app/Root'
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
 
-const lifecycles = singleSpaReact({
-  React,
-  ReactDOMClient,
-  rootComponent: Root,
-  errorBoundary() {
-    //Add your error boundary here
-    return <></>
-  },
-})
-
-export const { bootstrap, mount, unmount } = lifecycles
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
