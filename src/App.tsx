@@ -14,7 +14,7 @@ function App() {
   const [selectedModel, setSelectedModel] = useState<string>(WPP_AI_MODELS[0].id);
   const [inputMessage, setInputMessage] = useState<string>('');
   const [chatHistory, setChatHistory] = useState<ChatMessage[]>([]);
-  
+
   const { state, sendMessage, checkHealth, getUserInfo } = useWPPAI();
 
   const handleSendMessage = async () => {
@@ -37,7 +37,7 @@ function App() {
 
     try {
       const response = await sendMessage(currentMessage, selectedModel);
-      
+
       const aiResponse: ChatMessage = {
         id: (Date.now() + 1).toString(),
         text: response.response,
@@ -45,7 +45,7 @@ function App() {
         timestamp: new Date(),
         model: selectedModel
       };
-      
+
       setChatHistory(prev => [...prev, aiResponse]);
     } catch (error) {
       const errorMessage: ChatMessage = {
@@ -70,18 +70,32 @@ function App() {
     setChatHistory([]);
   };
 
+  // Check if running locally
+  const isLocalDevelopment = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+
   return (
     <div className="App">
       <header className="App-header">
         <h1>🤖 WPP Open AI Chat</h1>
         <p>AI-powered chat running within the Open OS platform</p>
+
+        {isLocalDevelopment && (
+          <div className="local-dev-notice">
+            <h3>🔧 Local Development Mode</h3>
+            <p>You're running this app locally. To test with real WPP Open APIs:</p>
+            <ul>
+              <li>✅ <strong>Use the hosted version</strong>: <a href="https://wpp-open-ai-chat.vercel.app" target="_blank" rel="noopener noreferrer">https://wpp-open-ai-chat.vercel.app</a></li>
+              <li>❌ <strong>Local version</strong>: CORS blocked (expected behavior)</li>
+            </ul>
+          </div>
+        )}
       </header>
 
       <div className="chat-container">
         {/* Open OS Status Panel */}
         <div className="connection-panel">
           <h3>🔗 Open OS Integration Status</h3>
-          
+
           {state.isLoading ? (
             <div className="connection-status">
               <div className="status-loading">
@@ -114,8 +128,16 @@ function App() {
                   <li>Ensure you are properly authenticated</li>
                   <li>The app will automatically connect using your Open OS context</li>
                 </ol>
-                <p><em>Note: Running locally will show this message. This is expected behavior.</em></p>
+                {isLocalDevelopment && (
+                  <p><em>💡 <strong>Local Development:</strong> Use the hosted version at <a href="https://wpp-open-ai-chat.vercel.app" target="_blank" rel="noopener noreferrer">wpp-open-ai-chat.vercel.app</a> to test with real WPP Open APIs!</em></p>
+                )}
               </div>
+            </div>
+          )}
+
+          {state.error && (
+            <div className="status-error">
+              ❌ Error: {state.error}
             </div>
           )}
 
@@ -161,9 +183,11 @@ function App() {
           {chatHistory.length === 0 ? (
             <div className="empty-chat">
               <p>
-                {state.isConnected 
-                  ? 'No messages yet. Start a conversation with AI!' 
-                  : 'Launch this app from Open OS to start chatting with AI models!'
+                {state.isConnected
+                  ? 'No messages yet. Start a conversation with AI!'
+                  : isLocalDevelopment
+                    ? 'Use the hosted version to test with real WPP Open APIs!'
+                    : 'Launch this app from Open OS to start chatting with AI models!'
                 }
               </p>
             </div>
@@ -209,9 +233,11 @@ function App() {
               onChange={(e) => setInputMessage(e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder={
-                state.isConnected 
+                state.isConnected
                   ? "Type your message here... (Press Enter to send)"
-                  : "Launch from Open OS to start chatting"
+                  : isLocalDevelopment
+                    ? "Use the hosted version to test with real APIs"
+                    : "Launch from Open OS to start chatting"
               }
               className="chat-input"
               rows={3}
@@ -229,8 +255,8 @@ function App() {
 
         {/* Chat Actions */}
         <div className="chat-actions">
-          <button 
-            onClick={clearChat} 
+          <button
+            onClick={clearChat}
             className="clear-button"
             disabled={!state.isConnected}
           >
